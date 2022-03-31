@@ -62,6 +62,30 @@
         </tr>
     </table>
 
+    <form>
+        FirstName : <input type="text" name="fn"><br>
+        LastName: <input type="text" name="ln">
+        <input type="checkbox" name="cb">是<br>
+        <input type="checkbox" name="cb">否
+
+        <input type="radio" name="r">男<br>
+        <input type="radio" name="r">女<br>
+
+        Password: <input type="password" name="ps"><br>
+
+        <textarea rows="10" cols="30">
+
+        </textarea><br>
+
+        <select name="abc">
+            <option value="a">A</option>
+            <option value="b">B</option>
+            <option value="c" selected>C</option>
+            <option value="D">D</option>
+        </select>
+
+    </form>
+
     <ul>
         <li>Coffee</li>
         <li>Milk</li>
@@ -71,6 +95,21 @@
         <li>Coffee</li>
         <li>Milk</li>
     </ol>
+
+    <h1>我的第一个 JavaScript </h1>
+    <p id="demo">
+        JavaScript 可以触发事件，就像按钮点击。</p>
+
+    <script>
+
+        document.write("Hello World");
+
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "Hello JavaScript!";
+        }
+
+    </script>
+    <button type="button" onclick="myFunction()">点我</button>
 
 </body>
 

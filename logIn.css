@@ -1,0 +1,58 @@
+.table{
+    border: 3px solid hsl(0deg 0% 95%);
+    border-collapse: collapse;
+    width: 500px;
+    height: 490px;
+    margin: 100px auto;
+}
+img{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left:200px;
+}
+input[type=text], input[type=password] {
+    width: 95%;
+    padding: 12px 20px;
+    display: block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    position: relative;
+    left: 10px;
+  }
+  .buttonGreen{
+      display: block;
+      border: none;
+      background-color: hsl(158deg 95% 34%);
+      width: 95%;
+      padding: 12px 20px;
+      box-sizing: border-box;
+      color: white;
+      position: relative;
+      left: 10px;
+  }
+  .buttonGreen:hover{
+      background-color: lightgreen;
+  }
+  .buttonRed{
+      display: block;
+      border: none;
+      background-color: hsl(4deg 90% 58%);
+      width: 20%;
+      color: white;
+      box-sizing: border-box;
+      padding: 12px 0px;
+      position: relative;
+      left: 10px;
+  }
+  .buttonRed:hover{
+      background-color: blanchedalmond;
+  }
+  label{
+      position: relative;
+      left: 10px;
+  }
+  .footer{
+      background-color:hsl(0deg 0% 95%);
+      text-align: right;
+  }
