@@ -8,10 +8,10 @@
 img{
     width: 100px;
     height: 100px;
-    position: relative;
-    left:200px;
+    display: block;
+    margin: auto;
 }
-input[type=text], input[type=password] {
+inout[type=text],inout[type=password] {
     width: 95%;
     padding: 12px 20px;
     display: block;
@@ -30,9 +30,10 @@ input[type=text], input[type=password] {
       color: white;
       position: relative;
       left: 10px;
+      cursor: pointer;
   }
   .buttonGreen:hover{
-      background-color: lightgreen;
+      opacity: 0.4;
   }
   .buttonRed{
       display: block;
@@ -44,9 +45,10 @@ input[type=text], input[type=password] {
       padding: 12px 0px;
       position: relative;
       left: 10px;
+      cursor: pointer;
   }
   .buttonRed:hover{
-      background-color: blanchedalmond;
+      opacity: 0.4;
   }
   label{
       position: relative;
