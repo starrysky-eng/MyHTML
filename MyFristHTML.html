@@ -111,6 +111,35 @@
     </script>
     <button type="button" onclick="myFunction()">点我</button>
 
+
+    <h1>JavaScript 数组</h1>
+
+    <p>将前两个数组元素复制到第三和第四个位置：</p>
+
+    <p id="demo1"></p>
+
+    <script>
+        const fruits = ["Banana", "Orange", "Apple", "Mango", "Kiwi", "Papaya"];
+        document.getElementById("demo1").innerHTML = fruits.copyWithin(3, 0, 2);
+    </script>
+    <h1>JavaScript 数组</h1>
+
+    <p>Array.entries() 方法返回带有键/值对的 Array Iterator 对象：</p>
+
+    <p id="demo2"></p>
+
+    <script>
+        const fruit = ["Banana", "Orange", "Apple", "Mango"];
+        const f = fruit.entries();
+
+        for (let x of f) {
+            document.getElementById("demo2").innerHTML += x + "<br>";
+        }
+    </script>
+
+    <p>Internet Explorer 不支持 Array.entries() 方法。</p>
+
+
 </body>
 
 </html>

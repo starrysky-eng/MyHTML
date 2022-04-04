@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="textHTMLUseJSLogin.css">
+    <title>EmailLoginCheck</title>
+</head>
+
+<body>
+    <script>
+        var result = {
+            name: "",
+            email: "",
+            text: ""
+        };
+        function checkMessage() {
+            var mail = /^[0-9a-zA-Z_.-]+[@][0-9a-zA-Z_.-]+([.][a-zA-Z]+){1,2}$/;
+            result.email = document.getElementById("email");
+            result.name = document.getElementById("name");
+            result.text = document.getElementById("text");
+            if (result.name.value == "") {
+                confirm("名前を入力してください");
+                result.name.focus();
+            } else if (result.email.value == "") {
+                confirm("メールアドレスを入力してください");
+                result.email.focus();
+            } else if (!result.email.value.match(mail)) {
+                confirm("メールアドレスの形式が不正です");
+                result.email.focus();
+            } else if (result.text.value == "") {
+                confirm("テキストを入力してください");
+                result.text.focus();
+            }
+            else {
+                result.submit();
+            }
+        }
+        function cleanMessage() {
+            document.forms["messageBox"].reset();
+        }
+    </script>
+
+    <form id="messageBox">
+        <label for="お名前">お名前: </label>
+        <input type="text" id="name" value=""><br>
+
+        <label for="メールアドレス">メールアドレス: </label>
+        <input type="email" id="email" value=""><br>
+
+        <label for="メッセージ">メッセージ: </label>
+        <textarea rows="10" cols="50"  id="text"></textarea><br>
+
+        <button class="sendMessageButton" type="submit" onclick="checkMessage();return false;">送信</button>
+        <button class="deleteMessageButton" type="button" onclick="cleanMessage()">取り消し</button>
+    </form>
+</body>
+
+</html>

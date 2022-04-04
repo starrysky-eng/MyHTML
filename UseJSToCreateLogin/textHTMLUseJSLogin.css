@@ -1,0 +1,23 @@
+input[type="text"]{
+    width: 15%;
+    margin: -20px 90px;
+}
+input[type="email"]{
+    width: 15%;
+    margin: -20px 25px;
+}
+textarea{
+    display: block;
+    margin: -20px 150px;
+}
+.sendMessageButton{
+    display: block;
+    margin-left: 380px;
+}
+.deleteMessageButton{
+    display: block;
+    margin: -26px 450px;
+}
+input[type="text"]:focus,input[type="email"]:focus,textarea:focus{
+    background-color: red;
+}
