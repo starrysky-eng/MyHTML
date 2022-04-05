@@ -71,7 +71,8 @@ label {
 
 .p {
     text-align: right;
+    width: 60%;
     position: relative;
-    right: 5%;
+    left: 30%;
     top: -10%;
 }
