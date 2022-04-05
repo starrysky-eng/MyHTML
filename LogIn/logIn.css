@@ -21,7 +21,7 @@ input[type=password] {
     border: 1px solid #ccc;
     box-sizing: border-box;
     position: relative;
-    left: 10px;
+    left: 2.5%;
 }
 
 .buttonGreen {
@@ -33,7 +33,7 @@ input[type=password] {
     box-sizing: border-box;
     color: white;
     position: relative;
-    left: 10px;
+    left: 2.5%;
     cursor: pointer;
 }
 
@@ -42,15 +42,14 @@ input[type=password] {
 }
 
 .buttonRed {
-    display: block;
     border: none;
     background-color: hsl(4deg 90% 58%);
     width: 20%;
     color: white;
     padding: 12px 0px;
     position: relative;
-    left: 10px;
-    top: 20px;
+    left: 5%;
+    top: 31%;
     cursor: pointer;
 }
 
@@ -60,7 +59,7 @@ input[type=password] {
 
 label {
     position: relative;
-    left: 10px;
+    left: 2.5%;
 }
 
 .footer {
@@ -73,6 +72,6 @@ label {
 .p {
     text-align: right;
     position: relative;
-    right: 20px;
-    top: -25px;
+    right: 5%;
+    top: -10%;
 }
